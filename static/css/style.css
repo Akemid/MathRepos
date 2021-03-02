@@ -50,6 +50,7 @@
 .img-inicio {
     display: block;
     margin: auto;
+    width: 250px;
 }
 
 .btn-inicio {

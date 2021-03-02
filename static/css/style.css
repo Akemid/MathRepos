@@ -1,33 +1,72 @@
 /* back ground */
-.bg-principal{
+
+.bg-principal {
     background-color: #ff2e63;
 }
 
+
 /* Letras */
 
-.text-navbar{
-    color:#252a34;
+.text-navbar {
+    color: #252a34;
 }
+
 
 /* enlaces */
 
-.link:hover{
-    color:#eaeaea;
+.link:hover {
+    color: #eaeaea;
 }
 
+
 /* imagenes */
-.img-navbar{
+
+.img-navbar {
     width: 50px;
     height: 50px;
 }
 
+
 /* nav bar */
-.nav-link{
-    color:#252a34;
+
+.nav-link {
+    color: #252a34;
 }
-.nav-link:hover{
-    color:#eaeaea;
+
+.nav-link:hover {
+    color: #eaeaea;
 }
-.navbar-toggler{
-    color:black;
+
+.navbar-toggler {
+    color: black;
+}
+
+
+/* seccion inicio */
+
+
+/* botones */
+
+.img-inicio {
+    display: block;
+    margin: auto;
+}
+
+.btn-inicio {
+    width: 270px;
+    height: 55px;
+    /* left: 45px;
+    top: 425px; */
+    display: block;
+    margin: auto;
+    background: #08d9d6;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+}
+
+.btn-inicio:hover {
+    background: #252a34;
+    color: #eaeaea;
 }

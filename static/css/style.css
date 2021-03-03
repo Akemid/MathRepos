@@ -153,3 +153,17 @@ footer ul {
     background: #252a34;
     color: #eaeaea;
 }
+
+.silabus-accordion {
+    background-color: #eaeaea;
+}
+
+.enlaces-superior {
+    color: #ff2e63;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.enlaces-superior:hover {
+    color: #08d9d6;
+}

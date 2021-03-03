@@ -19,30 +19,107 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-        </div>
-        <div class="collapse navbar-collapse px-3" id="navbarPrincipal">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html#inicio"><i class="fas fa-home"></i> Inicio</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Niveles</a></li> -->
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html#precios"><i class="fas fa-money-check-alt"></i> Planes de pago</a></li>
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html#solicitar-ejercicio"><i class="fas fa-pencil-alt"></i> Proponer ejercicio</a></li>
 
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Escribe aquí un tema" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Buscar</button>
-            </form>
+            <div class="collapse navbar-collapse px-3" id="navbarPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Niveles</a></li> -->
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html#precios"><i class="fas fa-money-check-alt"></i> Planes de pago</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="./index.html#solicitar-ejercicio"><i class="fas fa-pencil-alt"></i> Proponer ejercicio</a></li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Escribe aquí un tema" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
     </nav>
     <!-- fin de barra de navegacion -->
     <!-- seccion cursos superior -->
     <section id="cursos-superior" class="bg-image p-3">
         <div class="container-fluid">
-            <a href="#" class="w-100 btn btn-lg btn-superior">CALCULO I</a>
-            <a href="#" class="w-100 btn btn-lg btn-superior">CALCULO II</a>
-            <a href="#" class="w-100 btn btn-lg btn-superior">ESTADÍSTICAS Y PROBABILIDADES</a>
-            <a href="#" class="w-100 btn btn-lg btn-superior">FÍSICA I</a>
-            <a href="#" class="w-100 btn btn-lg btn-superior">FÍSICA II</a>
+            <div class="accordion" id="cursos">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="calculoi">
+                        <!-- <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                          </button> -->
+                        <button class="w-100 btn btn-lg btn-superior" type="button" data-bs-toggle="collapse" data-bs-target="#silaboUno" aria-expanded="true" aria-controls="silaboUno">CALCULO I</button>
+                    </h2>
+                    <div id="silaboUno" class="accordion-collapse collapse" aria-labelledby="calculoi" data-bs-parent="#cursos">
+                        <div class="accordion-body silabus-accordion">
+                            <p> AQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSO Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem sint sunt voluptates!
+                                Magnam nulla, aliquam placeat, velit, quo qui nisi beatae nihil iste corporis itaque tenetur architecto saepe laboriosam. Nisi cum molestias saepe! Autem, illo numquam et aspernatur soluta eos iure, nihil cum voluptatum
+                                odio provident excepturi fugit unde vel, ut est debitis. Hic, voluptatibus culpa! Ex, accusamus laboriosam! Ullam odit nemo omnis, corporis obcaecati ducimus ipsa id ratione aliquid, fuga vero cupiditate. Error doloremque
+                                dolorem nobis, fugiat aliquam, voluptate consequuntur atque odit quaerat, deserunt temporibus in quae aspernatur. dolorem nobis
+                            </p><a href="#" class="enlaces-superior">Entrar al curso</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="calculoii">
+
+                        <button class="w-100 btn btn-lg btn-superior" type="button" data-bs-toggle="collapse" data-bs-target="#silaboDos" aria-expanded="true" aria-controls="silaboDos">CALCULO II</button>
+                    </h2>
+                    <div id="silaboDos" class="accordion-collapse collapse" aria-labelledby="calculoii" data-bs-parent="#cursos">
+                        <div class="accordion-body silabus-accordion">
+                            <p> AQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSO Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem sint sunt voluptates!
+                                Magnam nulla, aliquam placeat, velit, quo qui nisi beatae nihil iste corporis itaque tenetur architecto saepe laboriosam. Nisi cum molestias saepe! Autem, illo numquam et aspernatur soluta eos iure, nihil cum voluptatum
+                                odio provident excepturi fugit unde vel, ut est debitis. Hic, voluptatibus culpa! Ex, accusamus laboriosam! Ullam odit nemo omnis, corporis obcaecati ducimus ipsa id ratione aliquid, fuga vero cupiditate. Error doloremque
+                                dolorem nobis, fugiat aliquam, voluptate consequuntur atque odit quaerat, deserunt temporibus in quae aspernatur. dolorem nobis
+                            </p>
+                            <a href="#" class="enlaces-superior">Entrar al curso</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="estadistica">
+
+                        <button class="w-100 btn btn-lg btn-superior" type="button" data-bs-toggle="collapse" data-bs-target="#silaboTres" aria-expanded="true" aria-controls="silaboTres">ESTADÍSTICA Y PROBABILIDADES</button>
+                    </h2>
+                    <div id="silaboTres" class="accordion-collapse collapse" aria-labelledby="estadistica" data-bs-parent="#cursos">
+                        <div class="accordion-body silabus-accordion">
+                            <p> AQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSO Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem sint sunt voluptates!
+                                Magnam nulla, aliquam placeat, velit, quo qui nisi beatae nihil iste corporis itaque tenetur architecto saepe laboriosam. Nisi cum molestias saepe! Autem, illo numquam et aspernatur soluta eos iure, nihil cum voluptatum
+                                odio provident excepturi fugit unde vel, ut est debitis. Hic, voluptatibus culpa! Ex, accusamus laboriosam! Ullam odit nemo omnis, corporis obcaecati ducimus ipsa id ratione aliquid, fuga vero cupiditate. Error doloremque
+                                dolorem nobis, fugiat aliquam, voluptate consequuntur atque odit quaerat, deserunt temporibus in quae aspernatur. dolorem nobis
+                            </p><a href="#" class="enlaces-superior">Entrar al curso</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="fisicai">
+
+                        <button class="w-100 btn btn-lg btn-superior" type="button" data-bs-toggle="collapse" data-bs-target="#silaboCuatro" aria-expanded="true" aria-controls="silaboCuatro">FÍSICA I</button>
+                    </h2>
+                    <div id="silaboCuatro" class="accordion-collapse collapse" aria-labelledby="fisicai" data-bs-parent="#cursos">
+                        <div class="accordion-body silabus-accordion">
+                            <p> AQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSO Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem sint sunt voluptates!
+                                Magnam nulla, aliquam placeat, velit, quo qui nisi beatae nihil iste corporis itaque tenetur architecto saepe laboriosam. Nisi cum molestias saepe! Autem, illo numquam et aspernatur soluta eos iure, nihil cum voluptatum
+                                odio provident excepturi fugit unde vel, ut est debitis. Hic, voluptatibus culpa! Ex, accusamus laboriosam! Ullam odit nemo omnis, corporis obcaecati ducimus ipsa id ratione aliquid, fuga vero cupiditate. Error doloremque
+                                dolorem nobis, fugiat aliquam, voluptate consequuntur atque odit quaerat, deserunt temporibus in quae aspernatur. dolorem nobis
+                            </p> <a href="#" class="enlaces-superior">Entrar al curso</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="fisicaii">
+
+                        <button class="w-100 btn btn-lg btn-superior" type="button" data-bs-toggle="collapse" data-bs-target="#silaboCinco" aria-expanded="true" aria-controls="silaboCinco">FÍSICA II</button>
+                    </h2>
+                    <div id="silaboCinco" class="accordion-collapse collapse" aria-labelledby="fisicaii" data-bs-parent="#cursos">
+                        <div class="accordion-body silabus-accordion">
+                            <p> AQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSOAQUI IRIAN LOS TEMAS DEL CURSO Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatem sint sunt voluptates!
+                                Magnam nulla, aliquam placeat, velit, quo qui nisi beatae nihil iste corporis itaque tenetur architecto saepe laboriosam. Nisi cum molestias saepe! Autem, illo numquam et aspernatur soluta eos iure, nihil cum voluptatum
+                                odio provident excepturi fugit unde vel, ut est debitis. Hic, voluptatibus culpa! Ex, accusamus laboriosam! Ullam odit nemo omnis, corporis obcaecati ducimus ipsa id ratione aliquid, fuga vero cupiditate. Error doloremque
+                                dolorem nobis, fugiat aliquam, voluptate consequuntur atque odit quaerat, deserunt temporibus in quae aspernatur. dolorem nobis
+                            </p><a href="#" class="enlaces-superior">Entrar al curso</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <!-- fin seccion cursos superior -->

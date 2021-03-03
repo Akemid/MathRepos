@@ -8,6 +8,11 @@
     background-color: #eaeaea;
 }
 
+.bg-image {
+    background-image: url("../img/background-formula.jpeg");
+    background-color: #eaeaea;
+}
+
 
 /* Letras */
 
@@ -30,7 +35,11 @@
 
 /* enlaces */
 
-.link:hover {
+.enlaces {
+    text-decoration: none;
+}
+
+.enlaces:hover {
     color: #eaeaea;
 }
 
@@ -84,6 +93,63 @@
 }
 
 .btn-inicio:hover {
+    background: #252a34;
+    color: #eaeaea;
+}
+
+
+/* footer */
+
+.rights {
+    color: #eaeaea;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Pagina nivel escolar */
+
+.btn-escolar {
+    font-size: 30px;
+    display: block;
+    margin: 30px auto;
+    padding-top: 80px;
+    width: 200px;
+    height: 200px;
+    background: #08D9D6;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+}
+
+.btn-escolar:hover {
+    background: #252a34;
+    color: #eaeaea;
+}
+
+
+/* PAGINA NIVEL SUPERIOR */
+
+.btn-superior {
+    padding: auto 0;
+    width: 270px;
+    height: 55px;
+    /* left: 45px;
+    top: 425px; */
+    display: block;
+    margin: 15px auto;
+    background: #08d9d6;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+}
+
+.btn-superior:hover {
     background: #252a34;
     color: #eaeaea;
 }

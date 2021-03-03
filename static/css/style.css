@@ -4,11 +4,27 @@
     background-color: #ff2e63;
 }
 
+.bg-secundario {
+    background-color: #eaeaea;
+}
+
 
 /* Letras */
 
 .text-navbar {
     color: #252a34;
+}
+
+.text-grey {
+    color: #eaeaea;
+}
+
+.text-red {
+    color: #ff2e63;
+}
+
+.text-sky {
+    color: #08d9d6;
 }
 
 
@@ -50,7 +66,7 @@
 .img-inicio {
     display: block;
     margin: auto;
-    width: 250px;
+    width: 260px;
 }
 
 .btn-inicio {

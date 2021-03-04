@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMAS CURSO : CALCULO I</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <!-- barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-principal ">
+        <div class="container-fluid px-3">
+            <a href="#" class="navbar-brand"> <img class="img-navbar" src="../static/img/logo-light.png" alt="logo-principal" srcset=""> MathRepos
+            </a>
+            <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse " id="navbarPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Niveles</a></li> -->
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html#precios"><i class="fas fa-money-check-alt"></i> Planes de pago</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html#solicitar-ejercicio"><i class="fas fa-pencil-alt"></i> Proponer ejercicio</a></li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Escribe aquí un tema" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- fin de barra de navegacion -->
+    <!-- barra de navegacion secundaria -->
+    <nav class="navbar" aria-label="navegacion-secundaria" id="navegacionSecundaria">
+        <form class="d-flex px-3 justify-content-center">
+            <div class="input-group my-3">
+                <input type="search" class="form-control" placeholder="Escribe aquí un tema" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit" id="search-secondary">Buscar</button>
+                <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#navLateral" role="button" aria-expanded="false" aria-controls="navLateral">
+                    <i class="fas fa-chevron-circle-down"></i>
+                </a>
+            </div>
+        </form>
+        <!-- <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor" viewBox="0 0 16 16">
+            <title>Expand</title>
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"></path>
+          </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor" viewBox="0 0 16 16">
+            <title>Collapse</title>
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z"></path>
+          </svg> 
+            <i class="fas fa-chevron-circle-down"></i>
+            </button> -->
+
+    </nav>
+    <!-- fin barra de navegacion secundaria -->
+
+    <!-- inicio navegacion lateral-->
+    <aside>
+        <div class="collapse px-3" id="navLateral">
+            <ul class="list-unstyled">
+                <li>
+                    <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas1" role="button" aria-expanded="false" aria-controls="idsubtemas1">Tema 1</a>
+                    <div class="collapse px-3" id="idsubtemas1">
+                        <ul class="list-unstyled">
+                            <li> <a class="enlaces-temas" href="#primerSubtema">Subtema 1</a> </li>
+                            <li><a class="enlaces-temas" href="#segundoSubtema">Subtema 2</a> </li>
+                            <li><a class="enlaces-temas" href="#tercerSubtema">Subtema 3</a> </li>
+                            <li><a class="enlaces-temas" href="#cuartoSubtema">Subtema 4</a> </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas2" role="button" aria-expanded="false" aria-controls="idsubtemas2">Tema 2</a>
+                    <div class="collapse px-3" id="idsubtemas2">
+                        <ul class="list-unstyled">
+                            <li> <a class="enlaces-temas" href="#">Subtema 1</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 2</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 3</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 4</a> </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas3" role="button" aria-expanded="false" aria-controls="idsubtemas3">Tema 3</a>
+                    <div class="collapse px-3" id="idsubtemas3">
+                        <ul class="list-unstyled">
+                            <li> <a class="enlaces-temas" href="#">Subtema 1</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 2</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 3</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 4</a> </li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas4" role="button" aria-expanded="false" aria-controls="idsubtemas4">Tema 4</a>
+                    <div class="collapse px-3" id="idsubtemas4">
+                        <ul class="list-unstyled">
+                            <li> <a class="enlaces-temas" href="#">Subtema 1</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 2</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 3</a> </li>
+                            <li><a class="enlaces-temas" href="#">Subtema 4</a> </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </aside>
+    <!-- fin navegacion lateral -->
+
+    <!-- Main parrafo informacion de curso -->
+    <main id="cursos-superior" class="bg-image p-3">
+        <div class="container-fluid bg-secundario">
+            <h1 id="#primerTema">Primer Tema del curso</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio harum quo odio, possimus at vitae alias praesentium ipsam provident. Iste id magnam accusantium tempore officiis distinctio corrupti mollitia, laboriosam eligendi! Vel id quisquam
+                maiores laudantium quos ipsam quas animi excepturi quis aperiam necessitatibus fugiat atque deleniti sunt a, qui est porro expedita dignissimos eum? Pariatur omnis perspiciatis beatae provident eligendi. Voluptatum quod cumque quis nihil
+                corrupti voluptas ipsum, a eligendi magnam natus minima aperiam quo quasi recusandae? Voluptatibus possimus totam reprehenderit quas voluptate alias, molestias atque quod perferendis non nemo. Natus, maxime mollitia at veniam recusandae
+                ex vitae fuga provident quibusdam, sapiente nesciunt tempore aliquid quod! Minus dignissimos eos nam, magnam quod, laudantium molestias iure eligendi facilis sint possimus incidunt. Eveniet dolorum ratione suscipit, facere hic ad aliquam
+                enim at vitae quisquam aliquid minima officiis ipsam, quasi nemo officia consequatur ullam molestiae doloremque. Magnam corrupti dolorem cumque maiores tempore nesciunt!</p>
+            <h2 id="primerSubtema">
+                Primer Subtema
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore laboriosam ad magnam qui sunt dolorem, impedit, odio repellat consequuntur ea similique magni voluptas voluptate laudantium expedita dignissimos eaque repellendus. Harum
+                facere atque deleniti commodi qui recusandae quasi in ratione! Mollitia aut iste explicabo amet reiciendis autem iusto soluta in distinctio ipsum maxime, quasi alias eum! Molestiae ea incidunt sint. Saepe numquam nam facilis quas quibusdam
+                voluptates nulla ipsa natus asperiores eveniet quia quae, aspernatur ab, unde iusto labore possimus animi assumenda enim quod sed facere ratione accusantium minus. Architecto? Accusantium, dolores, nihil natus fuga iure eius rerum impedit
+                ipsa inventore veniam ipsum doloribus repellendus molestiae labore aspernatur sunt id eum quas. Soluta praesentium voluptatem ea facilis, itaque hic quod! Corrupti, expedita, molestiae, maxime quia eum obcaecati fugiat tempore exercitationem
+                doloremque dicta eos amet ut minus atque nisi suscipit commodi asperiores eligendi ipsam inventore facilis possimus. Ab quos recusandae aperiam! Rem velit temporibus natus laudantium eum illum dolore ea quam illo, praesentium quod tenetur
+                consequatur, dolorem minima molestiae! Natus officia vero iste dolores non pariatur harum voluptate saepe id libero. Impedit accusamus a inventore consequatur autem molestiae, natus aspernatur sint dolorum minima cum laborum ipsa odit
+                aperiam nihil aut, error necessitatibus! Magni excepturi quo nihil ab dignissimos vitae sequi id. Consequuntur, provident est, at error ea dolorem sequi asperiores minima, tempora harum perspiciatis dolor magni. Enim eum cum provident.
+                Ex commodi iure nobis ad quo non quae mollitia corrupti cumque! Quo assumenda placeat odio omnis dolore ipsam unde cum ea asperiores soluta voluptas fuga vel labore voluptatem aliquam, ex at odit est corrupti incidunt. Commodi quod assumenda
+                repellat qui dolore. Dolore saepe ratione quisquam sint dolorem labore. Expedita, ad aut? Beatae consequatur explicabo repellendus numquam neque cupiditate dolore ut, iusto error harum perferendis aperiam ducimus at pariatur dolores. Dolorum,
+                officia!
+            </p>
+            <h2 id="segundoSubtema">
+                Segundo Subtema
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore laboriosam ad magnam qui sunt dolorem, impedit, odio repellat consequuntur ea similique magni voluptas voluptate laudantium expedita dignissimos eaque repellendus. Harum
+                facere atque deleniti commodi qui recusandae quasi in ratione! Mollitia aut iste explicabo amet reiciendis autem iusto soluta in distinctio ipsum maxime, quasi alias eum! Molestiae ea incidunt sint. Saepe numquam nam facilis quas quibusdam
+                voluptates nulla ipsa natus asperiores eveniet quia quae, aspernatur ab, unde iusto labore possimus animi assumenda enim quod sed facere ratione accusantium minus. Architecto? Accusantium, dolores, nihil natus fuga iure eius rerum impedit
+                ipsa inventore veniam ipsum doloribus repellendus molestiae labore aspernatur sunt id eum quas. Soluta praesentium voluptatem ea facilis, itaque hic quod! Corrupti, expedita, molestiae, maxime quia eum obcaecati fugiat tempore exercitationem
+                doloremque dicta eos amet ut minus atque nisi suscipit commodi asperiores eligendi ipsam inventore facilis possimus. Ab quos recusandae aperiam! Rem velit temporibus natus laudantium eum illum dolore ea quam illo, praesentium quod tenetur
+                consequatur, dolorem minima molestiae! Natus officia vero iste dolores non pariatur harum voluptate saepe id libero. Impedit accusamus a inventore consequatur autem molestiae, natus aspernatur sint dolorum minima cum laborum ipsa odit
+                aperiam nihil aut, error necessitatibus! Magni excepturi quo nihil ab dignissimos vitae sequi id. Consequuntur, provident est, at error ea dolorem sequi asperiores minima, tempora harum perspiciatis dolor magni. Enim eum cum provident.
+                Ex commodi iure nobis ad quo non quae mollitia corrupti cumque! Quo assumenda placeat odio omnis dolore ipsam unde cum ea asperiores soluta voluptas fuga vel labore voluptatem aliquam, ex at odit est corrupti incidunt. Commodi quod assumenda
+                repellat qui dolore. Dolore saepe ratione quisquam sint dolorem labore. Expedita, ad aut? Beatae consequatur explicabo repellendus numquam neque cupiditate dolore ut, iusto error harum perferendis aperiam ducimus at pariatur dolores. Dolorum,
+                officia!
+            </p>
+            <h2 id="tercerSubtema">
+                Tercer Subtema
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore laboriosam ad magnam qui sunt dolorem, impedit, odio repellat consequuntur ea similique magni voluptas voluptate laudantium expedita dignissimos eaque repellendus. Harum
+                facere atque deleniti commodi qui recusandae quasi in ratione! Mollitia aut iste explicabo amet reiciendis autem iusto soluta in distinctio ipsum maxime, quasi alias eum! Molestiae ea incidunt sint. Saepe numquam nam facilis quas quibusdam
+                voluptates nulla ipsa natus asperiores eveniet quia quae, aspernatur ab, unde iusto labore possimus animi assumenda enim quod sed facere ratione accusantium minus. Architecto? Accusantium, dolores, nihil natus fuga iure eius rerum impedit
+                ipsa inventore veniam ipsum doloribus repellendus molestiae labore aspernatur sunt id eum quas. Soluta praesentium voluptatem ea facilis, itaque hic quod! Corrupti, expedita, molestiae, maxime quia eum obcaecati fugiat tempore exercitationem
+                doloremque dicta eos amet ut minus atque nisi suscipit commodi asperiores eligendi ipsam inventore facilis possimus. Ab quos recusandae aperiam! Rem velit temporibus natus laudantium eum illum dolore ea quam illo, praesentium quod tenetur
+                consequatur, dolorem minima molestiae! Natus officia vero iste dolores non pariatur harum voluptate saepe id libero. Impedit accusamus a inventore consequatur autem molestiae, natus aspernatur sint dolorum minima cum laborum ipsa odit
+                aperiam nihil aut, error necessitatibus! Magni excepturi quo nihil ab dignissimos vitae sequi id. Consequuntur, provident est, at error ea dolorem sequi asperiores minima, tempora harum perspiciatis dolor magni. Enim eum cum provident.
+                Ex commodi iure nobis ad quo non quae mollitia corrupti cumque! Quo assumenda placeat odio omnis dolore ipsam unde cum ea asperiores soluta voluptas fuga vel labore voluptatem aliquam, ex at odit est corrupti incidunt. Commodi quod assumenda
+                repellat qui dolore. Dolore saepe ratione quisquam sint dolorem labore. Expedita, ad aut? Beatae consequatur explicabo repellendus numquam neque cupiditate dolore ut, iusto error harum perferendis aperiam ducimus at pariatur dolores. Dolorum,
+                officia!
+            </p>
+            <h2 id="cuartoSubtema">
+                Cuarto Subtema
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem dolore laboriosam ad magnam qui sunt dolorem, impedit, odio repellat consequuntur ea similique magni voluptas voluptate laudantium expedita dignissimos eaque repellendus. Harum
+                facere atque deleniti commodi qui recusandae quasi in ratione! Mollitia aut iste explicabo amet reiciendis autem iusto soluta in distinctio ipsum maxime, quasi alias eum! Molestiae ea incidunt sint. Saepe numquam nam facilis quas quibusdam
+                voluptates nulla ipsa natus asperiores eveniet quia quae, aspernatur ab, unde iusto labore possimus animi assumenda enim quod sed facere ratione accusantium minus. Architecto? Accusantium, dolores, nihil natus fuga iure eius rerum impedit
+                ipsa inventore veniam ipsum doloribus repellendus molestiae labore aspernatur sunt id eum quas. Soluta praesentium voluptatem ea facilis, itaque hic quod! Corrupti, expedita, molestiae, maxime quia eum obcaecati fugiat tempore exercitationem
+                doloremque dicta eos amet ut minus atque nisi suscipit commodi asperiores eligendi ipsam inventore facilis possimus. Ab quos recusandae aperiam! Rem velit temporibus natus laudantium eum illum dolore ea quam illo, praesentium quod tenetur
+                consequatur, dolorem minima molestiae! Natus officia vero iste dolores non pariatur harum voluptate saepe id libero. Impedit accusamus a inventore consequatur autem molestiae, natus aspernatur sint dolorum minima cum laborum ipsa odit
+                aperiam nihil aut, error necessitatibus! Magni excepturi quo nihil ab dignissimos vitae sequi id. Consequuntur, provident est, at error ea dolorem sequi asperiores minima, tempora harum perspiciatis dolor magni. Enim eum cum provident.
+                Ex commodi iure nobis ad quo non quae mollitia corrupti cumque! Quo assumenda placeat odio omnis dolore ipsam unde cum ea asperiores soluta voluptas fuga vel labore voluptatem aliquam, ex at odit est corrupti incidunt. Commodi quod assumenda
+                repellat qui dolore. Dolore saepe ratione quisquam sint dolorem labore. Expedita, ad aut? Beatae consequatur explicabo repellendus numquam neque cupiditate dolore ut, iusto error harum perferendis aperiam ducimus at pariatur dolores. Dolorum,
+                officia!
+            </p>
+            <a href="#navegacionSecundaria" class="w-100 btn btn-large btn-dark">Regresar a los temas</a>
+        </div>
+    </main>
+    <!-- inicio footer -->
+    <footer class="bg-principal">
+        <div class="container-fluid ">
+            <div class="row py-4 px-3">
+                <div class="col">
+                    <h2 class="titulo-footer">MathRepos</h2>
+                    <ul>
+                        <li><a class="link-dark enlaces" href="../index.html#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a class="link-dark enlaces" href="../index.html#precios"><i class="fas fa-money-check-alt"></i> Planes de pago</a></li>
+                        <li>
+                            <a class="link-dark enlaces" href="../index.html#solicitar-ejercicio"> <i class="fas fa-pencil-alt"></i> Proponer ejercicio</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h2 class="titulo-footer">Encuéntranos</h2>
+
+                    <ul>
+                        <li><a class="link-dark enlaces" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        </li>
+                        <li><a class="link-dark enlaces" href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+                        </li>
+                        <li> <a class="link-dark enlaces" href="#"><i class="fab fa-whatsapp-square"></i> Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center pt-3 bg-dark rights py-2">
+            <p>© 2021 MathRepos website todos los derechos reservados</p>
+        </div>
+    </footer>
+    <!-- fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/13d3c07b8d.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

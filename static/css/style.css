@@ -167,3 +167,15 @@ footer ul {
 .enlaces-superior:hover {
     color: #08d9d6;
 }
+
+
+/* temas de curso */
+
+.enlaces-temas {
+    color: black;
+    text-decoration: none;
+}
+
+.enlaces-temas:hover {
+    color: #ff2e63;
+}

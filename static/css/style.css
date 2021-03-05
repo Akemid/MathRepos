@@ -167,6 +167,7 @@ footer ul {
 .enlaces-superior:hover {
     color: #08d9d6;
 }
+
 .enlaces-banco {
     color: #08d9d6;
     text-decoration: none;
@@ -198,4 +199,11 @@ footer ul {
 
 .btn-despliegue {
     display: none;
+}
+
+
+/* prueba para git */
+
+.prueba {
+    color: red;
 }

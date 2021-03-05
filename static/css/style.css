@@ -167,6 +167,15 @@ footer ul {
 .enlaces-superior:hover {
     color: #08d9d6;
 }
+.enlaces-banco {
+    color: #08d9d6;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.enlaces-banco:hover {
+    color: #ff2e63;
+}
 
 .enlaces-cursos {
     text-align: start;
@@ -182,4 +191,11 @@ footer ul {
 
 .enlaces-temas:hover {
     color: #ff2e63;
+}
+
+
+/* para desaparecer un boton */
+
+.btn-despliegue {
+    display: none;
 }

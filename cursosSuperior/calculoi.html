@@ -44,7 +44,7 @@
                 <button class="btn btn-outline-dark" type="submit" id="search-secondary">Buscar</button>
                 <a class="btn btn-outline-dark" data-bs-toggle="collapse" href="#navLateral" role="button" aria-expanded="false" aria-controls="navLateral">
                     <i class="fas fa-chevron-circle-down"></i>
-                    <i class="fas fa-chevron-circle-up btn-despliegue"></i>
+                    <!-- <i class="fas fa-chevron-circle-up btn-despliegue"></i> -->
                 </a>
             </div>
         </form>
@@ -77,7 +77,22 @@
                             <li><a class="enlaces-temas" href="#tercerSubtema">Gráfica de una función e intersecciones con ejes coordenados</a> </li>
                             <li><a class="enlaces-temas" href="#cuartoSubtema">Comportamiento: creciente y decreciente</a> </li>
                             <li><a class="enlaces-temas" href="#quintoSubtema">Razón de cambio promedio</a> </li>
-                            <li><a class="enlaces-temas" href="#sextoSubtema">Función lineal-Función constante</a> </li>
+                            <li><a class="enlaces-temas" data-bs-toggle="collapse" href="#subtema6tema1Calculoi" role="button" aria-expanded="false" aria-controls="subtema6tema1Calculoi">Función lineal-Función constante</a>
+                                <div class="collapse px-3" id="subtema6tema1Calculoi">
+                                    <ul class="ps-3">
+                                        <li>
+                                            <a href="#" class="enlaces-temas">Regla de correspondencia</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="enlaces-temas">Gráfica y características</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="enlaces-temas">Función lineal con restricciones y por tramos</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
                             <li><a class="enlaces-temas" href="#septimoSubtema">Función cuadrática</a> </li>
                             <li><a class="enlaces-temas" href="#octavoSubtema">Función valor absoluto</a> </li>
                             <li><a class="enlaces-temas" href="#novenoSubtema">Función raíz cuadrada</a> </li>
@@ -92,10 +107,8 @@
                     <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas2" role="button" aria-expanded="false" aria-controls="idsubtemas2">OPERACIONES CON FUNCIONES</a>
                     <div class="collapse px-3" id="idsubtemas2">
                         <ul class="list-unstyled">
-                            <li> <a class="enlaces-temas" href="#">Subtema 1</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 2</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 3</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 4</a> </li>
+                            <li> <a class="enlaces-temas" href="#">Suma, resta, multiplicación y división</a> </li>
+                            <li><a class="enlaces-temas" href="#">Función compuesta e inversa</a> </li>
 
                         </ul>
                     </div>
@@ -104,10 +117,10 @@
                     <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas3" role="button" aria-expanded="false" aria-controls="idsubtemas3">LÍMITES Y CONTINUIDAD</a>
                     <div class="collapse px-3" id="idsubtemas3">
                         <ul class="list-unstyled">
-                            <li> <a class="enlaces-temas" href="#">Subtema 1</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 2</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 3</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 4</a> </li>
+                            <li> <a class="enlaces-temas" href="#">Límite de una función</a> </li>
+                            <li><a class="enlaces-temas" href="#">Límites infinitos y al infinito</a> </li>
+                            <li><a class="enlaces-temas" href="#">Límites indeterminados: Forma ∞/∞ , Forma 0/0</a> </li>
+                            <li><a class="enlaces-temas" href="#">Función racional </a> </li>
 
                         </ul>
                     </div>
@@ -116,10 +129,18 @@
                     <a class="btn px-0" data-bs-toggle="collapse" href="#idsubtemas4" role="button" aria-expanded="false" aria-controls="idsubtemas4">LA DERIVADA</a>
                     <div class="collapse px-3" id="idsubtemas4">
                         <ul class="list-unstyled">
-                            <li> <a class="enlaces-temas" href="#">Subtema 1</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 2</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 3</a> </li>
-                            <li><a class="enlaces-temas" href="#">Subtema 4</a> </li>
+                            <li> <a class="enlaces-temas" href="#">Definición de la derivada en un punto</a> </li>
+                            <li><a class="enlaces-temas" href="#">Álgebra de derivadas. Reglas de derivación</a> </li>
+                            <li><a class="enlaces-temas" href="#">Derivación de funciones implícitas</a> </li>
+                            <li><a class="enlaces-temas" href="#">Derivación logarítmica</a> </li>
+                            <li><a class="enlaces-temas" href="#">Derivadas de orden superior</a> </li>
+                            <li><a class="enlaces-temas" href="#">Diferencial de una función</a> </li>
+                            <li><a class="enlaces-temas" href="#">Razón de cambio: promedio e instantánea</a> </li>
+                            <li><a class="enlaces-temas" href="#">Intervalos de crecimiento y decrecimiento de una función: Criterio de la primera derivada</a> </li>
+                            <li><a class="enlaces-temas" href="#">Trazado de gráficas de funciones de variable real</a> </li>
+                            <li><a class="enlaces-temas" href="#">Optimización de funciones</a> </li>
+                            <li><a class="enlaces-temas" href="#">Cálculo de máximos y mínimos absolutos y/o relativos</a> </li>
+                            <li><a class="enlaces-temas" href="#">Marginalidad en el proceso productivo</a> </li>
 
                         </ul>
                     </div>
@@ -133,12 +154,13 @@
     <!-- Main parrafo informacion de curso -->
     <main id="cursos-superior" class="bg-image p-3">
         <div class="container-fluid bg-secundario p-5">
-            <h1 id="#primerTema" class="mb-4">Primer Tema del curso</h1>
+            <h1 id="#primerTema" class="mb-4">Definición, notación</h1>
             <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio harum quo odio, possimus at vitae alias praesentium ipsam provident. Iste id magnam accusantium tempore officiis distinctio corrupti mollitia, laboriosam eligendi! Vel id quisquam
                 maiores laudantium quos ipsam quas animi excepturi quis aperiam necessitatibus fugiat atque deleniti sunt a, qui est porro expedita dignissimos eum? Pariatur omnis perspiciatis beatae provident eligendi. Voluptatum quod cumque quis nihil
                 corrupti voluptas ipsum, a eligendi magnam natus minima aperiam quo quasi recusandae? Voluptatibus possimus totam reprehenderit quas voluptate alias, molestias atque quod perferendis non nemo. Natus, maxime mollitia at veniam recusandae
                 ex vitae fuga provident quibusdam, sapiente nesciunt tempore aliquid quod! Minus dignissimos eos nam, magnam quod, laudantium molestias iure eligendi facilis sint possimus incidunt. Eveniet dolorum ratione suscipit, facere hic ad aliquam
                 enim at vitae quisquam aliquid minima officiis ipsam, quasi nemo officia consequatur ullam molestiae doloremque. Magnam corrupti dolorem cumque maiores tempore nesciunt!</p>
+            <img src="" alt="" srcset="">
             <h2 id="primerSubtema" class="mb-4">
                 Primer Subtema
             </h2>
